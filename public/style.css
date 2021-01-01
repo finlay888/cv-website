@@ -1,0 +1,490 @@
+body{
+    margin:0;
+    padding:0;
+    font-size: 20px;
+    font-family:'Open Sans', sans-serif;
+    background: linear-gradient(to right, rgb(60, 60, 255), rgb(67, 61, 164));
+}
+
+header{
+    background-color: #abcdeb;
+}
+
+h2{
+    font-family: 'Sansita Swashed', cursive;
+}
+
+h3{
+    font-family: 'Sansita Swashed', cursive;
+}
+
+
+/********************************************************************************
+
+/* nav menu */
+
+.nav-menu{
+    background-color: #444;
+    padding: 10px ;
+}
+
+.menu{
+	display: flex;
+	width: span;
+    flex-wrap: wrap;
+    list-style: none;
+    padding-left: 0;
+    margin-block-start:0;
+    margin-block-end:0;
+}
+.menu-item{
+    text-decoration: none;
+    margin: 10px 30px 10px 30px;
+    transition: all 0.3s linear;
+}
+.menu-item:hover{
+	-webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
+    transition: transform 0.3s;
+}
+.left{
+    margin-left: 10vh;
+}
+.right{
+	margin-left: auto;
+    margin-right: 10vh;
+}
+a{
+    color: white;
+    text-decoration: none;
+    font-size:0.8em;
+}
+
+/********************************************************************************
+
+/* cover */
+
+.fade-in {
+animation: fadeIn ease 1s;
+-webkit-animation: fadeIn ease 1s;
+-moz-animation: fadeIn ease 1s;
+-o-animation: fadeIn ease 1s;
+-ms-animation: fadeIn ease 1s;
+}
+@keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+@-moz-keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+@-webkit-keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+@-o-keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+@-ms-keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+.container {
+    /*show heigh: auto*/
+    height: 70vh;
+    width: 100%;
+    background: linear-gradient(to right, rgb(60, 60, 255), rgb(67, 61, 164));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-small {
+    height: 30vh;
+}
+
+.container-header {
+    font-family: 'Sansita Swashed', cursive;
+    color: white;
+    font-size: 60px
+}
+
+.container-des {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    color: white;
+    font-size: 30px;
+}
+
+.zone:hover {
+    -webkit-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -moz-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -o-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -o-transform: scale(1.05);
+    transform: scale(1.05);
+    transition: transform 0.5s, box-shadow 0.5s;
+}
+.cover {
+    height: 70vh;
+    margin-right: 15px;
+} 
+
+/********************************************************************************
+
+Main Body */
+
+.main {
+    display: grid;
+    border-radius: 15px 15px 0 0;
+    padding-top: 7vh;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    margin-right: 5vw;
+    margin-left: 5vw;
+    padding-bottom: 7vh;
+    background-color: white;
+}
+
+.extend-main{
+    border-radius: 0;
+}
+
+/********************************************************************************
+
+/* grid stuffs */
+
+.grid-wrapper {
+    display: inline-grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    grid-column-gap: 5vw;
+    grid-row-gap: 5vw;
+    align-items: center;
+    justify-content: center;
+    padding-top: 2vh;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    margin-right: 5vw;
+    margin-left: 5vw;
+    padding-bottom: 7vh;
+    background-color: white;
+}
+
+.box {
+    cursor: pointer;
+    background-color: #444;
+    padding: 5px;
+    position: relative;
+    text-align: center;
+    border-radius: 10px;
+    transition: all 0.5s linear
+}
+
+.grid-image {
+    width: 100%;
+    height: auto;
+    margin: 0;
+     -webkit-mask-image:-webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+      mask-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0));
+      border-radius: 10px;
+}
+
+.image-overtext {
+    position: absolute;
+    bottom: 8px;
+    left: 8px;
+    color: white;
+    font-size: 30px;
+}
+
+.item-1 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+.item-2 {
+    grid-column-start: 4;
+    grid-column-end: 6;
+}
+
+.item-3 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.item-4 {
+    grid-column-start: 3;
+    grid-column-end: 6;
+}
+
+/*******************************************************************
+
+Footer */
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #444;
+    padding:6vh 0 6vh 0; 
+}
+
+.footer-text {
+    color: white;
+    font-size: 0.8em;
+    text-align: center;
+    width: 100%;
+}
+
+footer > div:hover{
+    cursor: pointer;
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
+    transition: transform 0.3s;
+}
+
+footer > div {
+    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-block-start:0;
+    margin-block-end:0;
+    transition: transform 0.3s;
+}
+
+/**************************************************************
+
+Reactivity */
+
+@media screen and (max-width: 750px) {
+    .container-des {
+        font-size: 0.75em;
+    }
+    .container-header{
+        font-size: 1.5em;
+    }
+    .image-overtext {
+        font-size: 20px;
+    }
+    .cover{
+        height: 50vw;
+        margin-right: 0;
+    }
+    .container{
+        height: 50vw;
+    }
+}
+
+/**************************************************************
+
+Careers*/
+
+.button-link-outer{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.button-link{
+    width: 350px;
+}
+
+.button{
+    text-align: center;
+    height: auto;
+    width: 350px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 15px;
+    background: linear-gradient(to right, rgb(60, 60, 255), rgb(67, 61, 164));
+    transition: all 0.5s;
+}
+
+.job-container{
+    display: flex;
+    width: span;
+    align-items: center;
+}
+
+.job-date{
+    margin-left: auto;
+}
+
+.centre-img{
+    margin: 25px auto 25px auto;
+    height: 175px;
+    width: auto;
+    border-radius: 10px;
+}
+
+.side-img{
+    margin: 8px;
+    height: 75px;
+    border-radius: 10px;
+}
+
+.wide-img{
+    height: auto;
+    width: 250px;
+}
+
+/*******************************************************
+
+Contact */
+
+.flex-container {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 20px 0 20px 0;
+}
+
+.social-icon {
+    height: 40px;
+    margin: 0 15px 0 15px;
+    width: auto;
+}
+
+.icon {
+    height: 40px;
+    width: auto;
+    transition: all 0.3s;
+}
+
+.social-right{
+    margin-right: auto;
+}
+
+.social-left{
+    margin-left: auto;
+}
+
+.small-enlarge:hover{
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
+    transition: transform 0.3s;
+}
+
+.text-centre{
+    text-align: center;
+}
+
+/*******************************************************************
+
+Academics */
+
+.float-left{
+    float: left;
+    margin: 15px;
+}
+
+.float-right{
+    float: right;
+    margin: 15px;
+}
+
+.high-school-table{
+    width: 100%;
+    height: auto;
+}
+
+.embedded-link{
+    color: blue;
+    text-decoration: underline;
+    font-size: 1em;
+}
+
+/**************************************************************
+
+Sports */
+
+.sports-top-image{
+    width: 100%;
+    height: auto;
+}
+
+.sports-bucs-image{
+    border-radius: 7px;
+    width: 100%;
+    height: auto;
+}
+
+.sports-image-container{
+    display: grid;
+    margin: 50px 0 50px 0;
+    grid-template-columns: 1fr 1fr;
+    flex-wrap: wrap;
+    grid-gap: 5px;
+    align-items: center;
+    justify-content: center;
+}
+
+.centre{
+    margin: 0 auto 0 auto;
+}
+
+.sports-list-item{
+    margin: 5px 0 5px 0;
+}
+
+/**************************************************************
+
+Coding */
+
+.program-icon {
+    height: 100px;
+    margin: 0 15px 0 15px;
+    width: auto;
+}
+
+.program-left {
+    margin-left: auto;
+}
+
+.program-right {
+    margin-right: auto;
+}
+
+.inner-program-icon {
+    height: 100px;
+    width: auto;
+    transition: all 0.3s;
+}
+
+.video-container {
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.video-spacer-left {
+    margin-right: 5vw
+}
+
+.video-spacer-right {
+    margin-left: 5vw
+}
+
+.flex-container-about{
+    margin: 0px;
+}
